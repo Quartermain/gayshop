@@ -267,12 +267,12 @@ ul.bullet li {
 	padding-left: 0;
 }
 
-button.button span {
+button.button.btn-cart span {
 	text-transform: uppercase;
 	background:#75be18 url("../images/icon-plus.png") no-repeat 10px center;
 }
 
-button.button:hover span {
+button.button.btn-cart:hover span {
 	background:#64b200 url("../images/icon-plus-hover.png") no-repeat 10px center;
 }
 button.button span span {
@@ -320,4 +320,29 @@ button.button span span {
 	border: none;
 	padding-top: 3px;
 	padding-bottom: 3px;
+}
+
+.gen-tabs-style1 .tabs a.current {
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+	border: none;
+}
+
+.gen-tabs-style1 .tabs a {
+	border: none;
+	line-height: 2.2em;
+}
+
+.gen-tabs-style1 .tabs-panels {
+	border: none;
+}
+
+.gen-tabs .tabs-panels {
+	background: #f8f8f8;
+	padding: 10px;
+}
+
+.product-view .btn-cart span, button.btn-checkout span {
+	background-color: #75be18;
 }
