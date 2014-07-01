@@ -346,3 +346,105 @@ button.button span span {
 .product-view .btn-cart span, button.btn-checkout span {
 	background-color: #75be18;
 }
+
+.product-view .btn-cart:hover span, button.btn-checkout:hover span,
+.button.button:hover span {
+	background-color: #5faa00;
+}
+
+/*Check out page*/
+
+.opc .active .step-title {
+	background-color: #000;
+	color: #fff;
+}
+
+.opc .step-title {
+	padding-bottom: 0;
+	padding-top: 0;
+	padding-left: 0;
+}
+
+.opc .allow .step-title:hover h2 {
+	color: #000;
+}
+
+.opc .active .step-title .number {
+	background-color: #75be18;
+	color: #000;
+	padding: 15px 20px;
+}
+
+.opc .step-title .number {
+	padding: 15px 20px;
+	background-color: #f0f0f0;
+}
+
+.opc .allow .step-title h2 {
+	color: #fff;
+}
+
+.opc .step-title h2 {
+	padding-top: 7px;
+	text-transform: uppercase;
+}
+
+.opc .step-title {
+	background-color: #f8f8f8;
+}
+
+.opc .step-title h2 {
+	color: #000;
+}
+
+#checkout-progress-wrapper {
+	background-color: #f8f8f8;
+	border-top: 3px solid #75be18;
+	padding: 0 10px;
+}
+
+.block.block_opc_below_progress.std {
+	display: none;
+}
+
+.sorter .view-mode {
+	padding-bottom: 2px;
+}
+
+.block-layered-nav dd li, .block-layered-nav .currently ol li {
+	line-height: 2em;
+	background-position: 3px 10px;
+}
+
+.rating-links #goto-reviews-form {
+	color: #6bb40f;
+}
+
+.price-box .old-price .price{
+	color: #bbb;
+	font-size: 24px;
+}
+
+.price-box .special-price > .price-label{
+	display: none;
+}
+
+.product-view .product-shop .price-box .special-price .price{
+	font-size: 36px;
+	color: #6bb40f !important;
+	font-weight: 700;
+}
+
+.add-to-box .add-to-cart button.button.btn-cart span {
+	background-image: url("../images/icon-cart.png");
+}
+
+.add-to-cart .button {
+	margin-left: 5px;
+}
+
+.v-centered-content .qty-wrapper {
+	background: #f4f4f4;
+	margin-right: 5px;
+	padding: 0 10px;
+}

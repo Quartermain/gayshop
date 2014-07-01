@@ -298,7 +298,9 @@
     //]]>
     </script>
     
-	<div class="box-additional box-tabs <?php echo $collatPrimaryColGridClass; ?>">
+    <!-- <?php echo $collatPrimaryColGridClass; ?> -->
+
+	<div class="box-additional box-tabs grid12-12">
     	<?php $info_tabs_html = trim($this->getChildHtml('info_tabs'));
 			if ($info_tabs_html) echo $info_tabs_html; ?>
 
@@ -321,7 +323,7 @@
 	<?php endif; ?>
          
     <?php if (isset($section['upsell'])): ?>
-    	<div class="box-additional box-up-sell <?php echo $collatPrimaryColGridClass; ?>"><?php echo $section['upsell']; ?></div>
+    	<div class="box-additional box-up-sell grid12-12"><?php echo $section['upsell']; ?></div>
     <?php endif; ?>
     
 </div> <!-- end: product-view -->
