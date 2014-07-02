@@ -127,6 +127,7 @@
 			<block type="cms/block" name="block_right_bottom" after="-">
 				<action method="setBlockId"><block_id>block_right_bottom</block_id></action>
 			</block>
+
 			
 		</reference>
 		
@@ -376,7 +377,7 @@
 		
 			<!-- Change review summary template: removed links to review page. IMPORTANT: new template file. -->
 			<action method="addReviewSummaryTemplate"><type>default</type><template>review/helper/summary_nolinks.phtml</template></action>
-			
+
 			<!-- Uncomment to restore Magento's default image display -->
 			<!--
 			<block type="catalog/product_view_media" name="product.info.media" as="media" template="catalog/product/view/media.phtml"/>
@@ -387,6 +388,8 @@
 				<action method="addTab" translate="title" module="catalog"><alias>description</alias><title>Product Description</title><block>catalog/product_view_description</block><template>catalog/product/view/description.phtml</template></action>
 				<action method="addTab" translate="title" module="payment"><alias>product.info.additional.recurring.schedule</alias><title>Recurring Profile</title><block>payment/catalog_product_view_profile</block><template>payment/catalog/product/view/profile/schedule.phtml</template></action>
 				<action method="addTab" translate="title" module="catalog"><alias>additional</alias><title>Additional Information</title><block>catalog/product_view_attributes</block><template>catalog/product/view/attributes.phtml</template></action>
+
+
 				<!-- Add reviews (first part). IMPORTANT: see the second part: reference name="tabreviews" -->
 				<!-- IMPORTANT: Do not change 'tabreviews' alias. It is needed in JS script in catalog/product/view.phtml -->
 				<action method="addTab" translate="title" module="catalog"><alias>tabreviews</alias><title>Reviews</title><block>review/product_view_list</block><template>review/product/view/list.phtml</template></action>
@@ -401,6 +404,14 @@
 				</block>
 			</block>
 			<!-- end: Add tabs -->
+			<reference name="product.info.extrahint">
+				<block type="sharingtool/share" name="addthis_sharetool" as="addthis_sharetool">
+			        <action method="setTemplate"><template>addthis/sharingtool/share.phtml</template></action>
+			    </block>
+			</reference>
+
+			
+			
 			
 			<!-- Up-sells: set columns count and max number of displayed items. TODO: remove -->
 			<block type="catalog/product_list_upsell" name="product.info.upsell" as="upsell_products" template="catalog/product/list/upsell.phtml">

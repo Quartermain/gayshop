@@ -448,3 +448,15 @@ button.button span span {
 	margin-right: 5px;
 	padding: 0 10px;
 }
+
+.in-stock {
+	color: #6bb40f;
+}
+
+.out-of-stock {
+	color: #fe202b;
+}
+
+.product-type-data .availability-only.feature{
+	display: none;
+}

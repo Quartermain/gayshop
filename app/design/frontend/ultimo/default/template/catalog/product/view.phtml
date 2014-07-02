@@ -160,23 +160,23 @@
             
             <?php echo $this->getReviewsSummaryHtml($_product, false, true); //reviews ?>
             
-            <?php if ($_product->getShortDescription()): ?>
-                <div class="short-description">
-                    <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
-                </div>
-            <?php endif;?>
-
             <?php if ($theme->getCfg('product_page/sku')): ?>
                 <div class="sku"><span><?php echo $this->__('SKU'); ?>: </span><?php echo $_product->getSku(); ?></div>
             <?php endif; ?>
 
             <?php echo $this->getChildHtml('alert_urls'); //alerts ?>
             
-            <?php if ($extrahint_html = $this->getChildHtml('extrahint')): //qty increments ?>
-                <div class="extrahint-wrapper"><?php echo $extrahint_html; ?></div>
-            <?php endif; ?>
-            
-            <div class="product-type-data<?php echo $productTypeClasses; ?>"><?php echo $this->getChildHtml('product_type_data'); ?></div>
+            <div class="product-type-data<?php echo $productTypeClasses; ?>">
+            	<?php echo $this->getChildHtml('product_type_data'); ?>
+            </div>
+
+
+            <?php if ($_product->getShortDescription()): ?>
+                <div class="short-description">
+                    <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+                </div>
+            <?php endif;?>
+
             
             <?php echo $this->getTierPriceHtml(); //tier prices ?>
 
@@ -188,6 +188,8 @@
                 <?php endif; ?>
                 <?php echo $this->getChildHtml('extra_buttons') ?>
             <?php endif; ?>
+
+
 
             <?php if ($_product->isSaleable() && $this->hasOptions()): ?>
                 <?php if ($container1_html = $this->getChildChildHtml('container1', '', true, true)): ?>
@@ -201,6 +203,15 @@
 				</div>
             <?php endif; ?>
             
+            
+            <?php if ($extrahint_html = $this->getChildHtml('extrahint')): //qty increments ?>
+                <div class="extrahint-wrapper"><?php echo $extrahint_html; ?></div>
+            <?php endif; ?>
+             
+
+
+            <!-- <?//php echo $this->getChildHtml('extrahint'); ?> -->
+
             <?php echo $this->getChildHtml('other'); ?>
 
             <?php if ($tmpHtml = $this->getChildHtml('block_product_primary_bottom')): ?>
