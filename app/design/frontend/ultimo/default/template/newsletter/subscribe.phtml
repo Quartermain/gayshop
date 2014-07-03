@@ -26,12 +26,21 @@
 ?>
 <div id="subscribe-form" class="clearer">
     <form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="newsletter-validate-detail">
-        <div>
-            <label for="newsletter"><?php echo $this->__('Newsletter') ?></label>
+        <div class="">
+            <h6 class="block-title heading"><?php echo $this->__('Newsletter') ?></h6>
+            <div class="description-subscribe"><?php echo $this->__('Join thousands of other people subscribe to our news') ?></div>
             <div class="input-box">
                 <input type="text" name="email" id="newsletter" title="<?php echo $this->__('Sign up for our newsletter') ?>" class="input-text required-entry validate-email" />
             </div>
             <button type="submit" title="<?php echo $this->__('Subscribe') ?>" class="button btn-inline"><span><span><?php echo $this->__('Subscribe') ?></span></span></button>
+        </div>
+        <div class="clear"></div>
+        <div class="social-link">
+            <a href="" class="FB icon-social"></a>
+            <a href="" class="TW icon-social"></a>
+            <a href="" class="Google icon-social"></a>
+            <a href="" class="Instagram icon-social"></a>
+            <a href="" class="Rss icon-social"></a>
         </div>
     </form>
 </div>

@@ -273,7 +273,7 @@ button.button.btn-cart span {
 }
 
 button.button.btn-cart:hover span {
-	background:#64b200 url("../images/icon-plus-hover.png") no-repeat 10px center;
+	background:#60aa00 url("../images/icon-plus-hover.png") no-repeat 10px center;
 }
 button.button span span {
 	height: 30px;
@@ -457,6 +457,69 @@ button.button span span {
 	color: #fe202b;
 }
 
+.product-type-data .price-box .regular-price .price{
+	font-size: 40px;
+}
+
 .product-type-data .availability-only.feature{
 	display: none;
+}
+
+.description-subscribe {
+	color: #999;
+	font-size: 13px;
+	margin-bottom: 23px;
+}
+
+#subscribe-form .input-box {
+	margin-right: 0;
+}
+#subscribe-form .input-box .input-text{
+	background-color: #6c6c6c;
+	color: #1b1b1b;
+	border: none;
+}
+
+.footer button.button span {
+	background-color: #75be18;
+}
+
+.icon-social {
+	background-image: url("../images/icon-social.png");
+	background-repeat: no-repeat;
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+}
+
+.footer button.button:hover span {
+	background-color: #60aa00;
+}
+
+.FB {
+	background-position: 0 0;
+}
+
+.TW {
+	background-position: -34px 0;
+}
+
+.Google {
+	background-position: -68px 0;
+}
+
+.Instagram {
+	background-position: -102px 0;
+}
+
+.Rss {
+	background-position: -137px 0;
+}
+
+.social-link {
+	margin-top: 29px;
+}
+
+.social-link a + a {
+	margin-left: 10px;
 }
